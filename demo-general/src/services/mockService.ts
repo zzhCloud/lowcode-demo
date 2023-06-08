@@ -78,6 +78,8 @@ const setPackagesToLocalStorage = async (scenarioName: string) => {
     return;
   }
   const packages = await filterPackages(material.getAssets().packages);
+  console.log(material.getComponentMetasMap());
+  console.log(packages);
   window.localStorage.setItem(
     getLSName(scenarioName, 'packages'),
     JSON.stringify(packages),

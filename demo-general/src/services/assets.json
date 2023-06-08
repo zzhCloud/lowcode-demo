@@ -73,40 +73,43 @@
         "https://alifd.alicdn.com/npm/@alifd/fusion-ui@2.0.0/build/lowcode/view.js",
         "https://alifd.alicdn.com/npm/@alifd/fusion-ui@2.0.0/build/lowcode/view.css"
       ]
+    },
+    {
+      "package": "lowcode-setting-components",
+      "version": "0.1.4",
+      "library": "BizComps",
+      "urls": [
+        "https://unpkg.com/lowcode-setting-components@0.1.4/build/lowcode/render/default/view.js",
+        "https://unpkg.com/lowcode-setting-components@0.1.4/build/lowcode/render/default/view.css"
+      ],
+      "editUrls": [
+        "https://unpkg.com/lowcode-setting-components@0.1.4/build/lowcode/view.js",
+        "https://unpkg.com/lowcode-setting-components@0.1.4/build/lowcode/view.css"
+      ],
+      "advancedUrls": {
+        "default": [
+          "https://unpkg.com/lowcode-setting-components@0.1.4/build/lowcode/render/default/view.js",
+          "https://unpkg.com/lowcode-setting-components@0.1.4/build/lowcode/render/default/view.css"
+        ]
+      },
+      "advancedEditUrls": {}
     }
   ],
   "components": [
     {
-      "exportName": "AlilcLowcodeMaterialsMeta",
+      "exportName": "LowcodeSettingComponentsMeta",
       "npm": {
-        "package": "@alilc/lowcode-materials"
+        "package": "lowcode-setting-components",
+        "version": "0.1.4"
       },
-      "url": "https://alifd.alicdn.com/npm/@alilc/lowcode-materials@1.0.7/build/lowcode/meta.js",
+      "url": "https://unpkg.com/lowcode-setting-components@0.1.4/build/lowcode/meta.js",
       "urls": {
-        "default": "https://alifd.alicdn.com/npm/@alilc/lowcode-materials@1.0.7/build/lowcode/meta.js",
-        "design": "https://alifd.alicdn.com/npm/@alilc/lowcode-materials@1.0.7/build/lowcode/meta.design.js"
-      }
-    },
-    {
-      "exportName": "AlifdLayoutMeta",
-      "npm": {
-        "package": "@alifd/layout",
-        "version": "2.0.7"
+        "default": "https://unpkg.com/lowcode-setting-components@0.1.4/build/lowcode/meta.js"
       },
-      "url": "https://alifd.alicdn.com/npm/@alifd/layout@2.0.7/build/lowcode/meta.js",
-      "urls": {
-        "default": "https://alifd.alicdn.com/npm/@alifd/layout@2.0.7/build/lowcode/meta.js"
-      }
-    },
-    {
-      "exportName": "AlifdFusionUiMeta",
-      "npm": {
-        "package": "@alifd/fusion-ui"
-      },
-      "url": "https://alifd.alicdn.com/npm/@alifd/fusion-ui@2.0.0/build/lowcode/meta.js",
-      "urls": {
-        "default": "https://alifd.alicdn.com/npm/@alifd/fusion-ui@2.0.0/build/lowcode/meta.js",
-        "design": "https://alifd.alicdn.com/npm/@alifd/fusion-ui@2.0.0/build/lowcode/meta.design.js"
+      "advancedUrls": {
+        "default": [
+          "https://unpkg.com/lowcode-setting-components@0.1.4/build/lowcode/meta.js"
+        ]
       }
     }
   ],

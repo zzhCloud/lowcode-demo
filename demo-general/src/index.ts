@@ -19,6 +19,7 @@ import CustomSetterSamplePlugin from './plugins/plugin-custom-setter-sample';
 import SetRefPropPlugin from '@alilc/lowcode-plugin-set-ref-prop';
 import LogoSamplePlugin from './plugins/plugin-logo-sample';
 import SimulatorLocalePlugin from './plugins/plugin-simulator-locale';
+import ExportConfig from './plugins/plugin-export-config'
 import lowcodePlugin from './plugins/plugin-lowcode-component';
 import appHelper from './appHelper';
 import './global.scss';
@@ -98,6 +99,9 @@ async function registerPlugins() {
   await plugins.register(SimulatorLocalePlugin);
 
   await plugins.register(lowcodePlugin);
+
+  // 导出组件配置
+  await plugins.register(ExportConfig)
 };
 
 (async function main() {
