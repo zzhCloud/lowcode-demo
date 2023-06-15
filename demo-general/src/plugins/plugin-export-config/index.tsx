@@ -15,7 +15,9 @@ const ExportConfigPlugin = (ctx: IPublicModelPluginContext) => {
 
       const componentsSetterMap = {
         InputSetting: 'StringSetter',
-        TextAreaSetting: 'TextAreaSetting'
+        TextAreaSetting: 'TextAreaSetting',
+        NumberInputSetting: 'NumberSetter',
+        RadioSetting: 'RadioGroupSetter',
       }
 
       // 处理数据源
