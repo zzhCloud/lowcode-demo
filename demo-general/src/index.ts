@@ -98,7 +98,8 @@ async function registerPlugins() {
   // 设计器区域多语言切换
   await plugins.register(SimulatorLocalePlugin);
 
-  await plugins.register(lowcodePlugin);
+  // 自定义组件
+  // await plugins.register(lowcodePlugin);
 
   // 导出组件配置
   await plugins.register(ExportConfig)

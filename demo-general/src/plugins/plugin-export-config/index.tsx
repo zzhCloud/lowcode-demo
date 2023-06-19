@@ -18,13 +18,57 @@ const ExportConfigPlugin = (ctx: IPublicModelPluginContext) => {
         TextAreaSetting: 'TextAreaSetting',
         NumberInputSetting: 'NumberSetter',
         RadioSetting: 'RadioGroupSetter',
+        SwitchSetting: 'BoolSetting'
       }
 
       // 处理数据源
       const getConfigJson = (componentsTree:IPublicTypeRootSchema[]) => {
-        const componentsTreeData = componentsTree[0].children
+        console.log(componentsTree);
+        const componentTreeData = getPageSchema(componentsTree[0])
 
 
+        console.log(componentTreeData);
+        Message.success('成功导出组件配置，详见控制台!');
+      }
+
+      // 处理page组件数据
+      const getPageSchema = (schema: IPublicTypeRootSchema) => {
+        const {props, children, componentName} = schema;
+        for (const key in schema) {
+          delete schema[key]
+        }
+        schema.title = props.title
+        schema.componentsName = props.componentsName;
+        schema.group = props.group
+        schema.description = props.description
+        schema.npm = {
+          "package": props.package,
+          "version": props.version,
+          "exportName": props.exportName,
+          "main": props.exportName,
+          "destructuring": true,
+          "subName": props.subName
+        }
+        schema.configure = {
+          component: {
+            isContainer: props.isContainer || false,
+            isLayout: props.isLayout || false,
+            isMinimalRenderUnit: props.isMinimalRenderUnit || false
+          }
+        }
+
+        schema.snippets = [
+            props.snippets || {}
+        ]
+        schema.supports = {
+          "style": true
+        }
+        schema.children = getPageChildSchema(children)
+        return  schema
+      }
+
+      // 处理子级数据
+      const getPageChildSchema = (schema: IPublicTypeNodeData[] | undefined ) => {
         function traverseFn(item:IPublicTypeNodeSchema & {[key: string]: any}) {
           const {props, children, componentName} = item;
           for (const key in item) {
@@ -53,11 +97,10 @@ const ExportConfigPlugin = (ctx: IPublicModelPluginContext) => {
           }
         }
 
-        for (const item of componentsTreeData) {
+        for (const item of schema) {
           traverseFn(item)
         }
-        console.log(componentsTreeData);
-        Message.success('成功导出组件配置，详见控制台!');
+        return schema
       }
 
       const exportConfigJson = () => {

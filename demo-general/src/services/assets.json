@@ -76,20 +76,20 @@
     },
     {
       "package": "lowcode-setting-components",
-      "version": "0.1.5",
+      "version": "0.1.6",
       "library": "BizComps",
       "urls": [
-        "https://unpkg.com/lowcode-setting-components@0.1.5/build/lowcode/render/default/view.js",
-        "https://unpkg.com/lowcode-setting-components@0.1.5/build/lowcode/render/default/view.css"
+        "https://unpkg.com/lowcode-setting-components@0.1.6/build/lowcode/render/default/view.js",
+        "https://unpkg.com/lowcode-setting-components@0.1.6/build/lowcode/render/default/view.css"
       ],
       "editUrls": [
-        "https://unpkg.com/lowcode-setting-components@0.1.5/build/lowcode/view.js",
-        "https://unpkg.com/lowcode-setting-components@0.1.5/build/lowcode/view.css"
+        "https://unpkg.com/lowcode-setting-components@0.1.6/build/lowcode/view.js",
+        "https://unpkg.com/lowcode-setting-components@0.1.6/build/lowcode/view.css"
       ],
       "advancedUrls": {
         "default": [
-          "https://unpkg.com/lowcode-setting-components@0.1.5/build/lowcode/render/default/view.js",
-          "https://unpkg.com/lowcode-setting-components@0.1.5/build/lowcode/render/default/view.css"
+          "https://unpkg.com/lowcode-setting-components@0.1.6/build/lowcode/render/default/view.js",
+          "https://unpkg.com/lowcode-setting-components@0.1.6/build/lowcode/render/default/view.css"
         ]
       },
       "advancedEditUrls": {}
@@ -100,15 +100,15 @@
       "exportName": "LowcodeSettingComponentsMeta",
       "npm": {
         "package": "lowcode-setting-components",
-        "version": "0.1.5"
+        "version": "0.1.6"
       },
-      "url": "https://unpkg.com/lowcode-setting-components@0.1.5/build/lowcode/meta.js",
+      "url": "https://unpkg.com/lowcode-setting-components@0.1.6/build/lowcode/meta.js",
       "urls": {
-        "default": "https://unpkg.com/lowcode-setting-components@0.1.5/build/lowcode/meta.js"
+        "default": "https://unpkg.com/lowcode-setting-components@0.1.6/build/lowcode/meta.js"
       },
       "advancedUrls": {
         "default": [
-          "https://unpkg.com/lowcode-setting-components@0.1.5/build/lowcode/meta.js"
+          "https://unpkg.com/lowcode-setting-components@0.1.6/build/lowcode/meta.js"
         ]
       }
     }
